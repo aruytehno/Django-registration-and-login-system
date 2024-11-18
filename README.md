@@ -1,16 +1,16 @@
 # Django-registration-and-login-system
-This web app has been developed using the popular Django framework and Bootstrap for the frontend. My motivation to build this project is so that I can learn about Django and tighten up my skills. This mini-app can be easily integrated into a bigger system project that needs to have a registration and login system.
+Это веб-приложение было разработано с использованием популярного фреймворка Django и Bootstrap для интерфейса. Я решил создать этот проект, чтобы узнать больше о Django и усовершенствовать свои навыки. Это мини-приложение может быть легко интегрировано в более крупный системный проект, который должен иметь систему регистрации и входа в систему.
 
 ### Basic Features of The App
     
-* Register – Users can register and create a new profile
-* Login - Registered users can login using username and password
-* Social Apps Login – Users can login using their GitHub or Google account
-* User Profile - Once logged in, users can create and update additional information such as avatar and bio in the profile page
-* Update Profile – Users can update their information such as username, email, password, avatar and bio
-* Remember me – Cookie Option, users don’t have to provide credentials every time they hit the site
-* Forgot Password – Users can easily retrieve their password if they forget it 
-* Admin Panel – admin can CRUD users
+* Регистрация – Пользователи могут зарегистрироваться и создать новый профиль
+* Логин - Зарегистрированные пользователи могут войти в систему, используя имя пользователя и пароль
+* Логин в социальных приложениях – Пользователи могут войти в систему, используя свою учетную запись GitHub или Google
+* Профиль пользователя - После входа в систему пользователи могут создавать и обновлять дополнительную информацию, такую как аватар и биография, на странице профиля
+* Обновить профиль – Пользователи могут обновлять свою информацию, такую как имя пользователя, адрес электронной почты, пароль, аватар и биография
+* Функция "Запомнить меня" – Cookie-файлы, благодаря которым пользователям не нужно вводить учетные данные каждый раз, когда они заходят на сайт.
+* Забыли пароль – пользователи могут легко восстановить свой пароль, если они его забудут 
+* Панель администратора – администратор может проверять пользователей
 
 ![ScreenShot](https://user-images.githubusercontent.com/66206865/131695930-648342b0-010b-44b2-a419-15ad54d47869.png)
 
@@ -18,15 +18,32 @@ This web app has been developed using the popular Django framework and Bootstrap
 [Here](https://dev.to/earthcomfy/series/14274) is a tutorial on how to build this project.
 
 ### Quick Start
-To get this project up and running locally on your computer follow the following steps.
-1. Set up a python virtual environment
-2. Run the following commands
+###### Обновление пакетов виртуального окружения:
+```shell
+pip install --upgrade pip
 ```
-$ pip install -r requirements.txt
-$ python manage.py migrate
-$ python manage.py createsuperuser
-$ python manage.py runserver
-```
-   
-3. Open a browser and go to http://localhost:8000/
 
+###### Установка зависимостей:
+```shell
+pip install -r requirements.txt
+```
+
+###### Создание миграции для БД:
+```shell
+python manage.py makemigrations
+```
+
+###### Миграция данных для таблиц:
+```shell
+python manage.py migrate
+```
+
+###### Создать суперпользователя:
+```shell
+python manage.py createsuperuser
+```
+
+###### Запуск локального сервера:
+```shell
+python manage.py runserver
+```
